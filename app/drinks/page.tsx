@@ -1,3 +1,4 @@
+import DrinksList from '@/components/DrinksList';
 import * as React from 'react';
 const url = `https://www.thecocktaildb.com/api/json/v1/1/search.php?f=a`;
 
@@ -12,13 +13,13 @@ const fetchDrinks = async() => {
 }
 
 const DrinksPage = async () => {
-  const drinks = await fetchDrinks();
-  console.log(drinks);
+  const data = await fetchDrinks();
   return (
     <div>
         <h1 className='text-3xl'>DrinksPage</h1>
+        <DrinksList drinks={data.drinks}/>
     </div>
-  )
+  );
 }
 
 export default DrinksPage;
