@@ -1,0 +1,7 @@
+-- CreateTable
+CREATE TABLE "TasK" (
+    "id" TEXT NOT NULL PRIMARY KEY,
+    "connect" TEXT NOT NULL,
+    "createdAt" DATETIME NOT NULL DEFAULT CURRENT_TIMESTAMP,
+    "completed" BOOLEAN NOT NULL DEFAULT false
+);
