@@ -10,10 +10,9 @@ datasource db {
   url      = env("DATABASE_URL")
 }
 
-model TasK{
+model Task {
   id String @id @default(uuid())
-  connect String
+  content String
   createdAt DateTime @default(now())
   completed Boolean @default(false)
 }
-

@@ -1,7 +1,7 @@
 -- CreateTable
-CREATE TABLE "TasK" (
+CREATE TABLE "Task" (
     "id" TEXT NOT NULL PRIMARY KEY,
-    "connect" TEXT NOT NULL,
+    "content" TEXT NOT NULL,
     "createdAt" DATETIME NOT NULL DEFAULT CURRENT_TIMESTAMP,
     "completed" BOOLEAN NOT NULL DEFAULT false
 );
