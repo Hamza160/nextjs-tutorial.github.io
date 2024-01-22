@@ -5,7 +5,7 @@ import { editTask } from '@/utils/actions';
 interface Task{
     id:string;
     content:string;
-    createdAt:string;
+    createdAt:string | Date;
     completed:boolean;
 }
 

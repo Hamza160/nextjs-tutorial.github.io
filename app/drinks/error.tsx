@@ -1,6 +1,6 @@
 'use client';
 
-function error(error) {
+function error(error: any) {
     console.log(error)
   return (
     // <div>there was an error...</div>

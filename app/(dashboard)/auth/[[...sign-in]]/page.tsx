@@ -1,7 +1,10 @@
 import React from 'react'
 
-const SignInPage = ({params}) => {
-  console.log(params)
+interface SingnInPagePrams{
+  params:{'sign-in':string}
+}
+
+const SignInPage: React.FC<SingnInPagePrams> = ({params}) => {
   return (
     <div>SignInPage</div>
   )

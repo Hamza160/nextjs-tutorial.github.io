@@ -1,6 +1,5 @@
 import Link from 'next/link';
 import * as React from 'react';
-import DrinkImg from './drink.jpeg';
 import Image from 'next/image';
 
 interface SingleDrinkPageProps{
@@ -30,7 +29,7 @@ const SingleDrinkPage: React.FC<SingleDrinkPageProps> = async ({params}) => {
             <Link href={`/drinks`} className='btn btn-primary mt-8 mb-12'>
                 Back to drinks
             </Link>
-            <Image src={imgSrc} width={300} height={300} className='h-48 w-48 rounded-lg' priority/>
+            <Image src={imgSrc} alt='' width={300} height={300} className='h-48 w-48 rounded-lg' priority/>
             {/* <Image src={DrinkImg} alt={title} className='h-48 w-48 rounded-lg'/> */}
             <h1 className='text-4xl mb-8'>{title}</h1>
         </div>
